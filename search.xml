@@ -19,10 +19,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>k8s常用的几种本地存储</title>
     <url>/2023/11/12/csi/k8s%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8/</url>
-    <content><![CDATA[<p>&emsp; 目前接触了几种k8s本地持久卷: hostpath, local-storage, directpv, open-local,  carina. 梳理下这几种本地存储在实现, 使用上有什么区别. </p>
-<p>&emsp; 其中hostpath和local-storage为k8s原生支持的本地持久卷; directpv是minio提供的一个用于cluster minio部署的本地存储, 本质上是DAS(Direct-Attached Storage); open-local阿里提供的本地存储, 利用linux的逻辑卷管理实现本地存储; carina为博云提供的一种本地存储csi. </p>
+    <content><![CDATA[<p>&emsp; 目前接触了几种k8s本地持久卷: hostpath, local-storage, directpv, open-local,  carina, topolvm等. 梳理下这几种本地存储的特性和适用场景啥的. 本文持续补充中…</p>
 <h1 id="k8s原生本地持久卷"><a href="#k8s原生本地持久卷" class="headerlink" title="k8s原生本地持久卷"></a>k8s原生本地持久卷</h1><h2 id="hostpath"><a href="#hostpath" class="headerlink" title="hostpath"></a>hostpath</h2><p>&emsp; hostPath卷从主机节点的文件系统把文件或目录挂载到Pod中。</p>
 <p>&emsp; 几种用hostpath的场景:</p>
 <ol>
