@@ -3,7 +3,7 @@
   <entry>
     <title>k8s本地持久化存储</title>
     <url>/2023/11/12/csi/k8s%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8/</url>
-    <content><![CDATA[<p>&emsp; 目前接触了几种k8s本地持久卷: hostpath, local-storage, directpv, open-local,  carina, topolvm等. 梳理下这几种本地存储的特性和适用场景啥的. 本文持续补充中…</p>
+    <content><![CDATA[<h1 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h1><p>&emsp; 目前接触了几种k8s本地持久卷: hostpath, local-storage, directpv, open-local等. 梳理下这几种本地存储的特性和适用场景啥的. 本文持续补充中…</p>
 <h1 id="k8s原生本地持久卷"><a href="#k8s原生本地持久卷" class="headerlink" title="k8s原生本地持久卷"></a>k8s原生本地持久卷</h1><h2 id="hostpath"><a href="#hostpath" class="headerlink" title="hostpath"></a>hostpath</h2><p>&emsp; hostPath卷从主机节点的文件系统把文件或目录挂载到Pod中。</p>
 <p>&emsp; 几种用hostpath的场景:</p>
 <ol>
